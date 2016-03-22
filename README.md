@@ -2,11 +2,16 @@
 
 This is Web Server container like Apache Tomcat!
 
-How to run it?
+
+----You can see different version in different Branch! -----
+
+
+一、How to run it?
+
     the main class is in com.huai.startup.Bootstrap.java
 
 
-Now It can do:
+二、Now It can do:
 
 1. Sent back HTML page to you while you pass a request in you browser, like:"http://localhost:8080/index.html"
 
