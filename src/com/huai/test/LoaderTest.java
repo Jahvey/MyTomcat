@@ -9,7 +9,7 @@ import java.net.URLStreamHandler;
 /**
  * Created by liangyh on 3/12/16.
  */
-public class Loader {
+public class LoaderTest {
 
     public static void main(String[] args) {
         URLClassLoader loader = null;
