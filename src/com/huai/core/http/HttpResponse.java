@@ -14,8 +14,14 @@ import java.util.Locale;
  */
 public class HttpResponse implements HttpServletResponse {
     private static final int BUFFER_SIZE = 1024;
+
     HttpRequest request;
+
+    /**
+     * a instance of OutputStream associated with Socket
+     */
     OutputStream outputStream;
+
     PrintWriter writer;
 
     /**
@@ -31,7 +37,7 @@ public class HttpResponse implements HttpServletResponse {
     }
 
     /**
-     * 发送静态文件
+     * sent static resource
      * @throws IOException
      */
     public void sendStaticResource() throws IOException {

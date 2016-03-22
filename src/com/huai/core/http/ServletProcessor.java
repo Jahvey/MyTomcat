@@ -5,8 +5,6 @@ import com.huai.utils.Constants;
 
 import javax.servlet.Servlet;
 import javax.servlet.ServletException;
-import javax.servlet.ServletRequest;
-import javax.servlet.ServletResponse;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;

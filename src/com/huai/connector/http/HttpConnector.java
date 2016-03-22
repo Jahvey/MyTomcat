@@ -7,6 +7,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 /**
+ * Laungh threads for connecting clients
  * Created by liangyh on 3/13/16.
  */
 public class HttpConnector implements Runnable{
@@ -30,6 +31,7 @@ public class HttpConnector implements Runnable{
                 try{
                     socket = serverSocket.accept();
 
+                    //处理客户端的请求，以及响应客户端
                     HttpProcessor processor = new HttpProcessor();
                     processor.process(socket);
                 }catch (Exception e){
@@ -46,6 +48,9 @@ public class HttpConnector implements Runnable{
 
     }
 
+    /**
+     * 启动连接线程
+     */
     public void start(){
         Thread thread = new Thread(this);
         thread.start();

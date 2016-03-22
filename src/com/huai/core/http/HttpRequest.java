@@ -13,6 +13,7 @@ import java.util.Locale;
 import java.util.Map;
 
 /**
+ *
  * Created by liangyh on 3/11/16.
  */
 public class HttpRequest implements HttpServletRequest {
@@ -31,7 +32,7 @@ public class HttpRequest implements HttpServletRequest {
     /**
      * 接收和解析从客户端浏览器传来的请求信息。
      *
-     * <p>读取用户希望请求的url，为此类的成员标量uri赋值</p>
+     * <p>读取用户希望请求的url，为此类的成员变量uri赋值</p>
      */
     public void parse(){
         StringBuffer request = new StringBuffer(2048);
@@ -50,6 +51,11 @@ public class HttpRequest implements HttpServletRequest {
         uri = parseUri(request.toString());
     }
 
+    /**
+     * parse URI from requestLine(first line in client's request)
+     * @param requestString
+     * @return
+     */
     private String parseUri(String requestString){
 
         int index1,index2;
