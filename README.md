@@ -2,6 +2,9 @@
 
 This is Web Server container like Apache Tomcat!
 
+How to run it?
+    the main class is in com.huai.startup.Bootstrap.java
+
 
 Now It can do:
 
