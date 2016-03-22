@@ -1,7 +1,6 @@
 # MyTomcat
 
-
-This is the first version that I write the web server just like Apache Tomcat Container.
+This is Web Server container like Apache Tomcat!
 
 
 Now It can do:
